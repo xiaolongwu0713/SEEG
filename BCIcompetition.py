@@ -80,7 +80,6 @@ class binaryClassification(nn.Module):
         self.relu = nn.ReLU()
         # self.batchnorm = nn.BatchNorm1d(100) # better not using
 
-
     def forward(self, inputs):
         x, _ = self.lstm(inputs)
         #x = self.batchnorm(x[-1,:,:])
@@ -93,7 +92,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 model = binaryClassification()
 model.to(device)
-#print(model)
+print(model)
 criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
