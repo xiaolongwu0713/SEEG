@@ -1,3 +1,4 @@
+*.png
 .idea/
 data/
 __pycache__/

@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 #channels=[8 9 10 18 19 20 21 22 23 24 62 63 69 70 105 107 108 109 110];
 #trials=[1:20,31:40];
 
-datafile='/Users/long/Documents/BCI/matlab_scripts/force/pls/move4TrainData.mat.mat'
+datafile='/Users/long/Documents/BCI/matlab_scripts/force/pls/move4TrainData.mat'
 dataset_raw = scipy.io.loadmat(datafile)
 dataset=dataset_raw['train'] # numpy array (114, 299, 30)
 target=dataset_raw['trainForce'] # (299, 30)
